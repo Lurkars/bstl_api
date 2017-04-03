@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_URI} !index
+  RewriteCond %{REQUEST_URI} !/install/install\.php$
+  RewriteCond %{REQUEST_URI} !/install/test\.php$
+  RewriteRule \.*$ index.php [L]
+</IfModule>
